@@ -1,0 +1,47 @@
+{
+  "tracker_default": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "left",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            { "title": "Full Map", "content": { "type": "map", "maps": ["full"] } },
+            { "title": "Flatlands", "content": { "type": "map", "maps": ["flatlands"] } },
+            { "title": "Factory Roof", "content": { "type": "map", "maps": ["factory_roof"] } },
+            { "title": "Snowy Outpost", "content": { "type": "map", "maps": ["snowy_outpost"] } },
+            { "title": "Smoked Forest", "content": { "type": "map", "maps": ["smoked_forest"] } },
+            { "title": "Mountainside", "content": { "type": "map", "maps": ["mountainside"] } },
+            { "title": "Lab", "content": { "type": "map", "maps": ["lab"] } },
+            { "title": "Ichor Refinery", "content": { "type": "map", "maps": ["ichor_refinery"] } },
+            { "title": "Living Quarters", "content": { "type": "map", "maps": ["living_quarters"] } },
+            { "title": "Lake", "content": { "type": "map", "maps": ["lake"] } },
+            // Pipe has no items
+            // { "title": "Pipe", "content": { "type": "map", "maps": ["pipe"] } },
+            { "title": "Barrows Ceiling", "content": { "type": "map", "maps": ["barrows_ceiling"] } },
+            { "title": "Elfame", "content": { "type": "map", "maps": ["elfame"] } }
+          ]
+        }
+      ]
+    }
+  }
+}

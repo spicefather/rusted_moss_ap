@@ -1,0 +1,31 @@
+{
+  "shared_item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "10, 10",
+            "h_alignment": "left",
+            "item_size": 3,
+            "rows": [
+              ["Grappling_Hook", "Charge_Jump", "Flag", "Titania_Piece"],
+              ["Pistol", "Shotgun", "Rocket_Launcher", "Sniper"],
+              ["Bolt_Dispenser", "Rail", "", "Grenade"],
+              ["Ruby_Slippers", "Cleansing_Charm", "Dandelion_Bomb", "Heavy_Ammo"],
+              ["Mayas_Trinket", "Ferns_Trinket", "Energy_Disruptor"],
+              // Not yet supported by apworld
+              // ["Energy_Converter", "Soft_Fae", "Mossy_Wings"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

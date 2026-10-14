@@ -1,0 +1,6 @@
+todo.*
+.~lock.*
+*.xcf
+.idea
+__pycache__/
+*.py[codz]

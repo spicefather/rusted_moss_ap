@@ -1,0 +1,19 @@
+{
+  "settings_popup": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "item_size": 3,
+        "rows": [
+          ["ending", "damage_boost", "grenade_boost"],
+          ["precise_movement", "precise_grapple", "bunny_hopping", "hard_combat"]
+        ]
+      }
+    ]
+  }
+}

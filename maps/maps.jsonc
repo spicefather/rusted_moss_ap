@@ -1,0 +1,81 @@
+[
+  {
+    "name": "full",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/full.png"
+  },
+  {
+    "name": "flatlands",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/flatlands.png"
+  },
+  {
+    "name": "factory_roof",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/factory_roof.png"
+  },
+  {
+    "name": "snowy_outpost",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/snowy_outpost.png"
+  },
+  {
+    "name": "smoked_forest",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/smoked_forest.png"
+  },
+  {
+    "name": "mountainside",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/mountainside.png"
+  },
+  {
+    "name": "lab",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/lab.png"
+  },
+  {
+    "name": "ichor_refinery",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/ichor_refinery.png"
+  },
+  {
+    "name": "living_quarters",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/living_quarters.png"
+  },
+  {
+    "name": "lake",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/lake.png"
+  },
+  // Pipe has no items
+  // {
+  //   "name": "pipe",
+  //   "location_size": 48,
+  //   "location_border_thickness": 4,
+  //   "img": "images/maps/pipe.png",
+  // },
+  {
+    "name": "barrows_ceiling",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/barrows_ceiling.png"
+  },
+  {
+    "name": "elfame",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/elfame.png"
+  }
+]

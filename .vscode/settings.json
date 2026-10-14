@@ -1,0 +1,45 @@
+{
+  "json.schemas": [  
+      {
+          "fileMatch": [
+              "*/manifest.json"
+          ],
+          "url": "https://poptracker.github.io/schema/packs/strict/manifest.json"
+      },
+      {
+          "fileMatch": [
+              "*/items/**/*.json",
+              "*/items/**/*.jsonc"
+          ],
+          "url": "https://poptracker.github.io/schema/packs/strict/items.json"
+      },
+      {
+          "fileMatch": [
+              "*/locations/**/*.json",
+              "*/locations/**/*.jsonc"
+          ],
+          "url": "https://poptracker.github.io/schema/packs/strict/locations.json"
+      },
+      {
+          "fileMatch": [
+              "*/layouts/**/*.json",
+              "*/layouts/**/*.jsonc"
+          ],
+          "url": "https://poptracker.github.io/schema/packs/strict/layouts.json"
+      },
+      {
+          "fileMatch": [
+              "*/maps/**/*.json",
+              "*/maps/**/*.jsonc"
+          ],
+          "url": "https://poptracker.github.io/schema/packs/strict/maps.json"
+      },
+      {
+          "fileMatch": [
+              "*/settings.json",
+              "*/settings.jsonc"
+          ],
+          "url": "https://poptracker.github.io/schema/packs/strict/settings.json"
+      }
+  ]
+}

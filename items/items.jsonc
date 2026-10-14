@@ -1,0 +1,238 @@
+[
+  {
+    "name": "Ruby Slippers",
+    "type": "toggle",
+    "img": "images/items/trinket/ruby_slippers.png",
+    "codes": "Ruby_Slippers"
+  },
+  {
+    "name": "Cleansing Charm",
+    "type": "toggle",
+    "img": "images/items/trinket/cleansing_charm.png",
+    "codes": "Cleansing_Charm"
+  },
+  {
+    "name": "Dandelion Bomb",
+    "type": "toggle",
+    "img": "images/items/trinket/dandelion_bomb.png",
+    "codes": "Dandelion_Bomb"
+  },
+  {
+    "name": "Heavy Ammo",
+    "type": "toggle",
+    "img": "images/items/trinket/heavy_ammo.png",
+    "codes": "Heavy_Ammo"
+  },
+  {
+    "name": "Maya's Trinket",
+    "type": "toggle",
+    "img": "images/items/trinket/mayas_trinket.png",
+    "codes": "Mayas_Trinket"
+  },
+  {
+    "name": "Fern's Trinket",
+    "type": "toggle",
+    "img": "images/items/trinket/ferns_trinket.png",
+    "codes": "Ferns_Trinket"
+  },
+  {
+    "name": "Energy Disruptor",
+    "type": "toggle",
+    "img": "images/items/trinket/energy_disruptor.png",
+    "codes": "Energy_Disruptor"
+  },
+  // Not yet implemented in apworld
+  // {
+  //   "name": "Energy Converter",
+  //   "type": "toggle",
+  //   "img": "images/items/trinket/energy_converter.png",
+  //   "codes": "Energy_Converter"
+  // },
+  // {
+  //   "name": "Soft Fae",
+  //   "type": "toggle",
+  //   "img": "images/items/trinket/soft_fae.png",
+  //   "codes": "Soft_Fae"
+  // },
+  // {
+  //   "name": "Mossy Wings",
+  //   "type": "toggle",
+  //   "img": "images/items/trinket/mossy_wings.png",
+  //   "codes": "Mossy_Wings"
+  // },
+  {
+    "name": "Grappling Hook",
+    "type": "progressive",
+    "allow_disabled": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/items/upgrade/grappling_hook_0.png",
+        "codes": "Grappling_Hook"
+      },
+      {
+        "img": "images/items/upgrade/grappling_hook_1.png",
+        "codes": "Grappling_Hook_Upgrade"
+      },
+      {
+        "img": "images/items/upgrade/grappling_hook_2.png",
+        "codes": "Infinite_Grappling_Hook"
+      }
+    ]
+  },
+  {
+    "name": "Charge Jump",
+    "type": "toggle",
+    "img": "images/items/upgrade/charge_jump.png",
+    "codes": "Charge_Jump"
+  },
+  {
+    "name": "Grenade",
+    "type": "toggle",
+    "img": "images/items/weapon/grenade.png",
+    "img_mods": "brightness|2",
+    "codes": "Grenade"
+  },
+  {
+    "name": "Titania Piece",
+    "type": "consumable",
+    "img": "images/items/collectible/titania_piece.png",
+    "max_quantity": 8,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "codes": "Titania_Piece"
+  },
+  {
+    "name": "Flag",
+    "type": "consumable",
+    "img": "images/items/collectible/flag.png",
+    "max_quantity": 6,
+    "increment": 1,
+    "decrement": 1,
+    "initial_quantity": 0,
+    "codes": "Flag"
+  },
+  {
+    "name": "Pistol",
+    "type": "toggle",
+    "img": "images/items/weapon/pistol.png",
+    "img_mods": "brightness|2",
+    "codes": "Pistol"
+  },
+  {
+    "name": "Shotgun",
+    "type": "toggle",
+    "img": "images/items/weapon/shotgun.png",
+    "img_mods": "brightness|2",
+    "codes": "Shotgun"
+  },
+  {
+    "name": "Rocket Launcher",
+    "type": "toggle",
+    "img": "images/items/weapon/rocket_launcher.png",
+    "img_mods": "brightness|2",
+    "codes": "Rocket_Launcher"
+  },
+  {
+    "name": "Sniper",
+    "type": "toggle",
+    "img": "images/items/weapon/sniper.png",
+    "img_mods": "brightness|2",
+    "codes": "Sniper"
+  },
+  // These two are not marked as progression
+  {
+    "name": "Bolt Dispenser",
+    "type": "toggle",
+    "img": "images/items/weapon/bolt_dispenser.png",
+    "img_mods": "brightness|2",
+    "codes": "Bolt_Dispenser"
+  },
+  // However Heavy Bullet logic assumes the player has Rail
+  {
+    "name": "Rail",
+    "type": "toggle",
+    "img": "images/items/weapon/rail.png",
+    "img_mods": "brightness|2",
+    "codes": "Rail"
+  },
+
+  // Rando Options
+  {
+    "name": "Ending",
+    "type": "progressive",
+    "allow_disabled": false,
+    "initial_stage_idx": 0,
+    "loop": true,
+    "codes": "ending",
+    "stages": [
+      {
+        "name": "Ending A",
+        "codes": "ending_a",
+        "img": "images/options/ending_a.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Ending B",
+        "codes": "ending_b",
+        "img": "images/options/ending_b.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Ending C",
+        "codes": "ending_c",
+        "img": "images/options/ending_c.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Ending D",
+        "codes": "ending_d",
+        "img": "images/options/ending_d.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Ending E",
+        "codes": "ending_e",
+        "img": "images/options/ending_e.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Damage Boost",
+    "type": "toggle",
+    "img": "images/options/damage_boost.png",
+    "codes": "damage_boost"
+  },
+  {
+    "name": "Grenade Boost",
+    "type": "toggle",
+    "img": "images/options/grenade_boost.png",
+    "codes": "grenade_boost"
+  },
+  {
+    "name": "Precise Movement",
+    "type": "toggle",
+    "img": "images/options/precise_movement.png",
+    "codes": "precise_movement"
+  },
+  {
+    "name": "Precise Grapple",
+    "type": "toggle",
+    "img": "images/options/precise_grapple.png",
+    "codes": "precise_grapple"
+  },
+  {
+    "name": "Bunny Hopping",
+    "type": "toggle",
+    "img": "images/options/bunny_hopping.png",
+    "codes": "bunny_hopping"
+  },
+  {
+    "name": "Hard Combat",
+    "type": "toggle",
+    "img": "images/options/hard_combat.png",
+    "codes": "hard_combat"
+  }
+]
