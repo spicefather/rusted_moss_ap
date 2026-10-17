@@ -2,7 +2,7 @@
   "name": "Rusted Moss AP Tracker",
   "game_name": "Rusted Moss",
   "platform": "pc",
-  "package_version": "1.0.0.0",
+  "package_version": "0.1.0",
   "package_uid": "rusted_moss_ap",
   "author": "spicefather",
   "min_poptracker_version": "0.25.9",

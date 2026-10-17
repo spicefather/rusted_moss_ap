@@ -101,7 +101,19 @@ end
 
 -- apply everything needed from slot_data, called from onClear
 function apply_slot_data(slot_data)
-	-- put any code here that slot_data should affect (toggling setting items for example)
+	for k, v in pairs(slot_data) do
+		print(string.format("%s: %s", k, v))
+		print(type(v))
+
+		local obj = Tracker:FindObjectForCode(k)
+		if obj then
+			if k == "ending" then
+				obj.CurrentStage = v
+			else
+				obj.Active = v
+			end
+		end
+	end
 end
 
 -- called right after an AP slot is connected

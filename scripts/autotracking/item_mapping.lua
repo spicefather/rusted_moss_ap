@@ -20,7 +20,7 @@ ITEM_MAPPING = {
 	[BASE_ITEM_ID + 00052] = { { "Rail" } },
 }
 
-RANDO_OPTIONS = {
+SLOT_DATA_OPTIONS = {
 	"ending",
   "damage_boost",
   "grenade_boost",
@@ -32,4 +32,11 @@ RANDO_OPTIONS = {
   -- "hard_maya",
   -- "deathlink",
   -- "shop_discount_percentage",
+}
+ENDINGS = {
+	"ending_a",
+	"ending_b",
+	"ending_c",
+	"ending_d",
+	"ending_e",
 }
