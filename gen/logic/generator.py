@@ -11,6 +11,7 @@ LOCATIONS_FILE = pathlib.Path("locations") / "locations.jsonc"
 START_LOCATION = "rm_start_0[100390]"
 
 GOAL_POS_GLOBAL = (2472, 3376)
+GOAL_POS_LOCAL = (452, 549)
 
 LOC_TO_REGION = dict()
 
@@ -65,7 +66,7 @@ def generate_poptracker_logic():
 
         r = checks[region_to].setdefault(room, dict(items=dict()))
         if not "map" in r:
-          r["map"] = REGIONS[region_to]["items"][item]["global"]
+          r["map"] = REGIONS[region_to]["items"][item]
         c = r["items"].setdefault(item, dict())
         c[loc_from] = loc_requires
 
@@ -178,14 +179,24 @@ def generate_poptracker_logic():
           write(lf, "\"map_locations\": [", ind)
           ind += 2
 
-          # TODO: Include locations for the local maps
           write(lf, "{", ind)
           ind += 2
 
-          pos = checks[region][room]["map"]
+          global_pos = checks[region][room]["map"]["global"]
           write(lf, "\"map\": \"full\",", ind)
-          write(lf, f"\"x\": {pos[0]},", ind)
-          write(lf, f"\"y\": {pos[1]},", ind)
+          write(lf, f"\"x\": {global_pos[0]},", ind)
+          write(lf, f"\"y\": {global_pos[1]},", ind)
+
+          ind -= 2
+          write(lf, "},", ind)
+
+          write(lf, "{", ind)
+          ind += 2
+
+          local_pos = checks[region][room]["map"]["local"]
+          write(lf, f"\"map\": \"{to_slug(region)}\",", ind)
+          write(lf, f"\"x\": {local_pos[0]},", ind)
+          write(lf, f"\"y\": {local_pos[1]},", ind)
 
           ind -= 2
           write(lf, "},", ind)
@@ -287,7 +298,19 @@ def generate_poptracker_logic():
     write(lf, f"\"size\": 56,", ind)
 
     ind -= 2
-    write(lf, "},", ind)  # Goal map location
+    write(lf, "},", ind)  # Goal global map location
+
+    write(lf, "{", ind)
+    ind += 2
+
+    write(lf, f"\"map\": \"elfame\",", ind)
+    write(lf, f"\"x\": {GOAL_POS_LOCAL[0]},", ind)
+    write(lf, f"\"y\": {GOAL_POS_LOCAL[1]},", ind)
+    write(lf, f"\"shape\": \"diamond\",", ind)
+    write(lf, f"\"size\": 56,", ind)
+
+    ind -= 2
+    write(lf, "},", ind)  # Goal local map location
 
     ind -= 2
     write(lf, "],", ind)  # Goal map_locations
@@ -325,6 +348,9 @@ def clean_loc(loc: str) -> str:
 def clean_requires(req: str) -> str:
   # Remove spaces for ease of parsing, and change | to = because | is a special character in location rules
   return req.replace(" ", "").replace("|", "=")
+
+def to_slug(region: str) -> str:
+  return region.lower().replace(" ", "_")
 
 def region_of(loc: str) -> str:
   cleaned = clean_loc(loc)
