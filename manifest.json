@@ -5,6 +5,7 @@
   "package_version": "0.1.0",
   "package_uid": "rusted_moss_ap",
   "author": "spicefather",
+  "versions_url": "https://raw.githubusercontent.com/spicefather/rusted_moss_ap/main/versions.json",
   "min_poptracker_version": "0.25.9",
   "target_poptracker_version": "0.35.4",
   "variants": {
