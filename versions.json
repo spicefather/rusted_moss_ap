@@ -1,6 +1,14 @@
 {
   "versions": [
     {
+      "package_version": "0.1.1",
+      "download_url": "https://github.com/spicefather/rusted_moss_ap/releases/download/v0.1.1/rusted_moss_ap-0.1.1.zip",
+      "sha256": "00562af8ae4ec6f6b4f2f5ff1ad90c39b13ccbd587060247b8bc5e6b26c1514d",
+      "changelog": [
+        "Added check markers to local area maps"
+      ]
+    },
+    {
       "package_version": "0.1.0",
       "download_url": "https://github.com/spicefather/rusted_moss_ap/releases/download/v0.1.0/rusted_moss_ap-0.1.0.zip",
       "sha256": "940a802c584f0cc36f0708d0bad9f06daed90a9e2f34ad813a0d7a325334e3c7",
